@@ -1,0 +1,85 @@
+/**
+ * @name ClearVision V7 (Transparent + M PLUS Rounded 1c)
+ * @author ClearVision Team (modified)
+ * @version 7.0.1-mod
+ * @description ClearVision with lighter transparency and custom font.
+ */
+
+/* ================= IMPORTS ================= */
+@import url("https://clearvision.github.io/ClearVision-v7/main.css");
+@import url("https://clearvision.github.io/ClearVision-v7/betterdiscord.css");
+
+/* ================= BASE SETTINGS ================= */
+:root {
+  /* ACCENT COLORS */
+  --main-color: #5db9ff;
+  --hover-color: #7bc8ff;
+  --success-color: #6fd7b8;
+  --danger-color: #ff7f96;
+
+  /* STATUS COLORS */
+  --online-color: #43b581;
+  --idle-color: #faa61a;
+  --dnd-color: #982929;
+  --streaming-color: #593695;
+  --offline-color: #808080;
+
+  /* BACKGROUND IMAGE */
+--background-image: url("https://raw.githubusercontent.com/nguyenhoangthanhan304-code/umi-asanagi-theme/main/anime-blue-umi-asanagi-i-made-fr%20(1).jpg");
+--background-position: center;
+--background-size: cover;
+--background-attachment: fixed;
+
+  /* VERY IMPORTANT — KEEP THIS */
+  --background-shading-percent: 100%;
+
+  /* NO FILTER THAT DARKENS */
+  --background-filter: none;
+
+  /* FONTS */
+  --main-font: "Zen Maru Gothic", "gg sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --code-font: Consolas, "gg mono", monospace;
+
+  /* HOME ICON */
+  --home-icon: url("https://raw.githubusercontent.com/nguyenhoangthanhan304-code/umi-asanagi-theme/main/umisharkicon.png");
+  --home-size: cover;
+}
+
+/* ================= DARK THEME (MAIN FIX) ================= */
+:is(.theme-dark, .theme-light .theme-dark) {
+  /* LIGHTER, TRANSPARENT SHADING */
+  --background-shading: rgba(0, 0, 0, 0.25);
+  --card-shading: rgba(0, 0, 0, 0.18);
+  --popout-shading: rgba(0, 0, 0, 0.35);
+  --modal-shading: rgba(0, 0, 0, 0.3);
+  --input-shading: rgba(255, 255, 255, 0.05);
+
+  /* TEXT */
+  --normal-text: #dff7ff;
+  --muted-text: #9dc8dc;
+}
+
+/* ================= OPTIONAL: EXTRA TRANSPARENCY ================= */
+/* Channels & chat */
+.chatContent-3KubbW,
+.container-2cd8Mz,
+.members-3WRCEx,
+.sidebar-1tnWFu {
+  background-color: transparent !important;
+}
+
+/* Panels */
+.layer-86YKbF,
+.standardSidebarView-E9Pc3j {
+  background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+/* ================= FONT ENFORCE (SAFE) ================= */
+body,
+button,
+input,
+textarea {
+  font-family: "M PLUS Rounded 1c", var(--main-font) !important;
+}
+
+/* ================= DO NOT ADD RANDOM CSS BELOW ================= */
